@@ -1,0 +1,64 @@
+tr td{
+    border: black solid 2px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: rgb(157, 162, 168) 5px 3px 12px;
+    font-size: 30px;
+}
+td:hover{
+    background-color: aquamarine;
+}
+table{
+    border: black solid 2px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: rgb(157, 162, 168) 5px 3px 12px 2px;
+}
+img{
+    height: 49px;
+    width: 49px;
+}
+
+.suspected{
+    background-image: url('https://i.ibb.co/SPmg61h/flag.png');
+    background-size: contain;
+}
+.mine{
+    background-image: url('https://i.ibb.co/KbCNMx5/bomb.png');
+    background-size: contain;
+}
+#MinesLeft{
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 30px;
+}
+#WIN{
+    background-color:rgba(0,255,0,0.4);
+}#LOST{
+    background-color:rgba(255,0,0,0.4);
+}
+#LOST,#WIN{
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    line-height: 150%;
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    top: 200px;
+    width: 100%;
+}
+
+#getName{
+position: fixed;
+top: 200px;
+left: 400px;
+padding: 50px;
+background-color: lightblue;
+direction: rtl;
+border-radius: 10px;
+display: none;
+}
