@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mines.css">
-</head>
-<body>
-<div id="getName">
-    <input type="text" placeholder="מה השם שלך" id="EnteredName"/>
-    <button onclick="SaveName()">שמור</button>
-</div>
-<div class="results">
-<div id="MinesLeft">Left: </div>
-<div id="currMoves"></div>
-<div id="passedTime"></div>
-<button onclick="ShowTopScores()">TopScores</button>
-</div>
-    <div id="mainBoard"></div>
-<div id="LOST">
-Game Finished - you LOST !
-</div>
-<div id="WIN">
-Game Finished - you WON !
-</div>
-    <script src="mines.js"></script>
-    <script src="top10.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="mines.css">
+    </head>
+    <body>
+        <div class="yellow-box ">
+            <div class="triangle-down"></div>
+            <div class="sign">danger mines</div>
+        </div>
+        <br>
+        <div id="getName">
+            <input type="text" placeholder="מה השם שלך" id="EnteredName"/>
+            <button onclick="SaveName()">שמור</button>
+        </div>
+        <div class="results">
+            <div id="MinesLeft">Left: </div>
+            <div id="currMoves"></div>
+            <div id="passedTime"></div>
+            <button onclick="ShowTopScores()">TopScores</button>
+        </div>
+            <div id="mainBoard"></div>
+        <div id="LOST">
+            Game Finished - you LOST !
+        </div>
+        <div id="WIN">
+            Game Finished - you WON !
+        </div>
+            <script src="mines.js"></script>
+            <script src="top10.js"></script>
+        </body>
 </html>
