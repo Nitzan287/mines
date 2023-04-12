@@ -13,7 +13,8 @@ function StartNewGame(){
     minesLeftToGuess=0;
     moves=0;
     board=[];
-
+    document.getElementById("getName").style.display="none";
+    document.getElementById("currMoves").innerHTML="Moves:0";
     createBoard();
     console.log(board);
     setMinesGlobalLimit();
@@ -41,7 +42,7 @@ function gameFinishedWithLost(){
 function showBoard(isGameFinished=false,showMines=false){
     console.log(`showBoard: isGameFinished=${isGameFinished}`);
     var str="";
-    str += "<table>";
+    str += "<table class='mainGame'>";
     for(let row=0;row<row_num;row++){
         str += "<tr>";
         for(let col=0;col<col_num;col++){
