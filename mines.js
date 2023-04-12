@@ -73,7 +73,7 @@ function showBoard(isGameFinished=false,showMines=false){
     }
     str += "</table>";
     if(isGameFinished){
-        str+="<button onclick='StartNewGame()'>start new game</button>";
+        str+="<button class='newGameBtn' onclick='StartNewGame()'>start new game</button>";
     }
     document.getElementById("mainBoard").innerHTML=str;     
 }

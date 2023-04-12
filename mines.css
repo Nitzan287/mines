@@ -6,9 +6,10 @@ tr td{
     border-radius: 10%;
     box-shadow: rgb(157, 162, 168) 5px 3px 12px;
     font-size: 30px;
+    background-color: white;
 }
 td:hover{
-    background-color: aquamarine;
+    background-color:rgb(169, 169, 169);
 }
 table{
     border: black solid 2px;
@@ -20,7 +21,10 @@ img{
     height: 49px;
     width: 49px;
 }
-
+body{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/025/379/278/large/max-everett-goldminebg1.jpg?1585606608.png);
+ 
+}
 .suspected{
     background-image: url('https://i.ibb.co/SPmg61h/flag.png');
     background-size: contain;
@@ -28,12 +32,7 @@ img{
 .mine{
     background-image: url('https://i.ibb.co/KbCNMx5/bomb.png');
     background-size: contain;
-}
-#MinesLeft{
-    background-color: bisque;
-    border-radius: 5px;
-    font-size: 30px;
-}
+}   
 #WIN{
     background-color:rgba(0,255,0,0.4);
 }#LOST{
@@ -51,16 +50,15 @@ img{
     top: 200px;
     width: 100%;
 }
-
 #getName{
-position: fixed;
-top: 200px;
-left: 400px;
-padding: 50px;
-background-color: lightblue;
-direction: rtl;
-border-radius: 10px;
-display: none;
+    position: fixed;
+    top: 200px;
+    margin: 0 50%;
+    padding: 50px;
+    background-color: lightblue;
+    direction: rtl;
+    border-radius: 10px;
+    display: none;
 }
 .yellow-box {
     background-color: yellow;
@@ -70,7 +68,6 @@ display: none;
     display: grid;
     grid-template-areas: 'r h';
 }
-
 .triangle-down {
 	width: 0;
 	height: 0;
@@ -82,4 +79,14 @@ display: none;
 .sign{
     grid-area: h;
 }
-
+.results{
+    background-color:rgb(169, 169, 169);
+    border-radius: 5px;
+    font-size: 30px;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+.newGameBtn{
+    margin: 10px 50%;
+}
